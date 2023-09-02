@@ -39,7 +39,7 @@ function addOne(num) {
 
 // It's called expression
 // variable
-console.log(addTwo(10)); // 
+console.log(addTwo(10)); 
 
 const addTwo = function (num) {
     return num + 2;
