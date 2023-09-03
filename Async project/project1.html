@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 </title>
+</head>
+
+<body>
+    <h1>Async project 1</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    // helper fnxs
+    const sayHii = function () {
+        console.log("Hii jaymin darji");
+    }
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "Best javascript course";
+        console.log("change txt");
+    }
+
+    // const changeMe = setTimeout(changeText, 2000);
+    const changeMe = setTimeout(changeText, 1000);
+
+    const stopBtn = document.getElementById("stop");
+    stopBtn.addEventListener("click", function () {
+        //clearTimeout(changeMe);
+        clearTimeout(changeMe)
+        console.log("btn clicked");
+    });
+
+</script>
+
+</html>
